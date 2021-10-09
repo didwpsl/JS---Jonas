@@ -1,15 +1,18 @@
-const firstName = 'Soyoung';
-const job = 'Programmer';
-const birthYear = 1993;
-const year = 2021;
+const age = 15;
 
-const soyoung = "I'm" + ' ' + firstName + ', a' + ' ' + (year - birthYear) 
-+ ' ' + 'years old' + ' ' + job + ' ' + '!';
-console.log(soyoung);
+if(age >= 18){
+console.log(`Sarah can start driving license👌`)
+}else {
+    const yearsleft = 18 - age;
+console.log(`Sarah can't drive yet🤣 She have to wait ${yearsleft} year`);
+}
 
-const newSoyoung = `I'm ${firstName}, a ${year-birthYear} years old ${job} !`;
-console.log(newSoyoung); 
+const birthYear = 1991;
+let centry;
+if (birthYear <= 2000){
+     centry = 20;
+} else {
+     centry = 21;
+}
 
-console.log(`Hello My name is \n ${firstName}`);
-
-console.log(`Hello My name is \t ${firstName}`);
+console.log(centry);
