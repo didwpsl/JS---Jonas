@@ -1,31 +1,15 @@
-let javaScriptIsFun = true;
-console.log(javaScriptIsFun);
+let age = 30;
+young= 10; 
+age = young;
 
-console.log(typeof true);
-console.log(typeof false);
-console.log(typeof javaScriptIsFun);
-console.log(typeof 2222);
+console.log(age);
 
-let a = 'Hi';
-let b = "Hello";
+const birthYear = 1993;
 
-console.log(a, b);
+console.log(birthYear);
 
-javaScriptIsFun = 'YES!';
-console.log(typeof javaScriptIsFun);
-javaScriptIsFun = 23;
-console.log(javaScriptIsFun);
-console.log(typeof javaScriptIsFun);
+const job = 'programmer';
+console.log(job);
 
-let year;
-console.log(year);
-console.log(typeof year);
-year = 'lol'
-console.log(year);
-console.log(typeof year);
-
-year = 1991;
-console.log(year);
-console.log(typeof year);
-
-console.log(typeof null);
+myName = 'SOYOUNG';
+console.log(myName); //avoid declaring variable without var or const or let
