@@ -1,55 +1,15 @@
-let age = 30;
-young= 10; 
-age = young;
-
-console.log(age);
-
+const firstName = 'Soyoung';
+const job = 'Programmer';
 const birthYear = 1993;
+const year = 2021;
 
-console.log(birthYear);
+const soyoung = "I'm" + ' ' + firstName + ', a' + ' ' + (year - birthYear) 
++ ' ' + 'years old' + ' ' + job + ' ' + '!';
+console.log(soyoung);
 
-const job = 'programmer';
-console.log(job);
+const newSoyoung = `I'm ${firstName}, a ${year-birthYear} years old ${job} !`;
+console.log(newSoyoung); 
 
-myName = 'SOYOUNG';
-console.log(myName); //avoid declaring variable without var or const or let
+console.log(`Hello My name is \n ${firstName}`);
 
-const now = 2000;
-const ageJenny = now - 1993;
-const ageJohn = now - 1990;
-console.log(ageJenny);
-console.log(ageJohn);
-
-console.log(ageJenny * 2, ageJenny**3);
-
-const firstName = 'SOYOUNG'
-const lastName = 'YANG'
-console.log(firstName + " " + lastName);
-
-let x = 10 + 5;
-x += 10;
-x *= 4;
-x ++ ;
-x--
-x--
-console.log(x);
-
-console.log(ageJenny < ageJohn);
-console.log(ageJenny <=18);
-console.log(ageJenny >= 100);
-
-const isFullAge = ageJenny >= 100;
-console.log(isFullAge);
-
-console.log(now - 1991 > now - 2020);
-
-let z, q; 
-z = q = 25 - 10- 5;
-console.log(z, q);
-
-const priceApple = 5000; 
-const priceBanana = 2000; 
-const avgPrice = priceApple + priceBanana / 2;
-const avgPrice2 = (priceApple + priceBanana) / 2;
-console.log(avgPrice);
-console.log(avgPrice2);
+console.log(`Hello My name is \t ${firstName}`);
