@@ -42,3 +42,14 @@ const isFullAge = ageJenny >= 100;
 console.log(isFullAge);
 
 console.log(now - 1991 > now - 2020);
+
+let z, q; 
+z = q = 25 - 10- 5;
+console.log(z, q);
+
+const priceApple = 5000; 
+const priceBanana = 2000; 
+const avgPrice = priceApple + priceBanana / 2;
+const avgPrice2 = (priceApple + priceBanana) / 2;
+console.log(avgPrice);
+console.log(avgPrice2);
