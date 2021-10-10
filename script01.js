@@ -1,26 +1,34 @@
-const age = 18;
-if(age == 18)
-    console.log('You just became an adult');
+/*
+A: age is greator or equal 20 
+B: age is less than 30 
+*/
+/*
+const age = 16;
+const A = age >= 20;
+const B = age < 30;
 
-if(age === '18')
-        console.log('You just became an adult');
-    else {
-        console.log('Type is not the same');
-    }
+console.log( A && B);
+console.log( A || B);
+*/
 
-const favourite = Number(prompt("What is your favourite number?"));
+const hasDriversLicense = true;  //A
+const hasGoodVision = true; // B
 
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
 
+/*if(hasDriversLicense && hasGoodVision){
+    console.log('Sarah is able to drive');
+}else {
+    console.log('Someone else should drive');
+}*/
 
-if (favourite === 23){
-    console.log('Cool 23 is an amazing number');
-}else if (favourite === 7){
-    console.log('7 is also a cool number');
-} else console.log('Boooooooooooo!');
+const isTired = false; // C 
+console.log(hasDriversLicense && hasGoodVision && isTired);
 
-const favnumber = Number(prompt('Guess what is the number that in my mind?'));
-if (Number === 8) {
-    console.log(favnumber)
-} else 
-console.log(prompt('Try Agian'));
-
+if(hasDriversLicense && hasGoodVision && !isTired){
+    console.log('Sarah is able to drive');
+}else {
+    console.log('Someone else should drive');
+}
