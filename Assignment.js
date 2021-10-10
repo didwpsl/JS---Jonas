@@ -193,7 +193,7 @@ returns the percentage of the world population that the given population
 represents. For example, China has 1441 million people, so it's about 18.2% of
 the world population
 */
-
+/*
 const Korea = 50000000;
 const Japan = 120000000;
 const Australia = 20000000;
@@ -217,7 +217,7 @@ and then multiply by 100
 3. Call 'percentageOfWorld1' for 3 populations of countries of your choice,
 store the results into variables, and log them to the console
 */
-
+/*
 const popKorea = percentageOfWorld1(Korea);
 const popJapan = percentageOfWorld1(Japan);
 const popAustralia = percentageOfWorld1(Australia);
@@ -230,7 +230,7 @@ console.log(popAustralia);
 'percentageOfWorld2', and also call it with 3 country populations (can be
 the same populations)
 */
-
+/*
 const percentageOfWorld2 = function(population) {
     return population / 7900000000 * 100;
 }
@@ -238,3 +238,20 @@ const percentageOfWorld2 = function(population) {
 console.log(percentageOfWorld2(Korea));
 console.log(percentageOfWorld2(Japan));
 console.log(percentageOfWorld2(Australia));
+
+/*
+LECTURE: Arrow Functions
+1. Recreate the last assignment, but this time create an arrow function called
+'percentageOfWorld3'
+*/
+
+const Korea = 50000000;
+const Japan = 120000000;
+const Australia = 20000000;
+
+
+const percentageOfWorld3 = population => population / 7900000000 * 100;
+
+console.log(percentageOfWorld3(Korea));
+console.log(percentageOfWorld3(Japan));
+console.log(percentageOfWorld3(Australia));
