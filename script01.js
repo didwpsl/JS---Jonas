@@ -1,16 +1,9 @@
-const age = 23;
-age >= 18 ? console.log('I like to drink wine') : console.log('I like to drink water');
+'use strict';
 
-const drink = age >= 18 ? 'wine' : 'water';
-console.log(drink);
+let hasDriversLicense = false;
+const passTest = true; 
 
-let drink2
+if (passTest) hasDriversLicense = true;
+if (hasDriversLicense) console.log('I can drive');
 
-if(age >=18){
-    drink2 = 'wine';
-} else {
-    drink2 = 'water';
-}
-console.log(drink2);
-
-console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`);
+const interface = 'Audio';
