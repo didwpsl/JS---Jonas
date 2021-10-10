@@ -136,6 +136,7 @@ if (Number(numNeighbours) === 1) {
 country that speaks english, has less than 50 million people and is not an
 island.
 */
+/*
 let population = 50000000;
 const country = 'KOREA';
 const continent = 'ASIA';
@@ -146,21 +147,40 @@ const language = 'KOREAN';
 You will need to write a condition that accounts for all of Sarah's criteria. Take
 your time with this, and check part of the solution if necessary.
 */
+/*
 const counSarah = (language === "English" && population < 50000000 && continent !== "ISLAND")
 
 /*
 4. If yours is the right country, log a string like this: 'You should live in Portugal :)'. If
 not, log 'Portugal does not meet your criteria :('
 */
-
+/*
 if (counSarah == true){
     console.log('You should live in Korea');
 } 
 else console.log('Korea does not meet your criteria');
 
 /*
-5. Probably your country does not meet all the criteria. So go back and temporarily
-change some variables in order to make the condition true (unless you live in
-Canada :D)
+LECTURE: Functions
+1. Write a function called 'describeCountry' which takes three parameters:
+'country', 'population' and 'capitalCity'. Based on this input, the
+function returns a string with this format: 'Finland has 6 million people and its
+capital city is Helsinki'
 */
+
+function describeCountry (country, population, capitalCity){
+    return (`${country} has ${population} million people and capital city is ${capitalCity}`)
+}
+
+/*
+2. Call this function 3 times, with input data for 3 different countries. 
+Store the  returned values in 3 different variables, and log them to the console
+*/
+const Korea = describeCountry('Korea', 50, 'Seoul');
+const Japan = describeCountry('Japan', 120, 'Tokyo');
+const Australia = describeCountry('Australia', 20, 'Canberra');
+
+console.log(Korea);
+console.log(Japan);
+console.log(Australia);
 
