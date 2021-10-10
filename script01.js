@@ -1,17 +1,14 @@
 'use strict';
 
-function logger() {
-    console.log('My name is Jonas');
+function calcAge1 (birthYeah){
+    return 2021 - birthYeah; 
 }
-function fruitProcessor(apples, oranges){
-    const juice = `Juice with ${apples} apples and ${oranges} oranges`;
-    return juice;
+const age1 = calcAge1(1993);
+console.log(age1);
+
+const calcage2 = function (birthYeah){
+    return 2021 - birthYeah;
 }
 
-const appleJuice = fruitProcessor(5, 0);
-console.log(appleJuice);
-
-console.log(fruitProcessor(1, 1));
-
-const appleOrangeJuice = fruitProcessor(2, 4);
-console.log(appleOrangeJuice);
+const age2= calcage2(1993);
+console.log(age2);

@@ -176,6 +176,7 @@ function describeCountry (country, population, capitalCity){
 2. Call this function 3 times, with input data for 3 different countries. 
 Store the  returned values in 3 different variables, and log them to the console
 */
+/*
 const Korea = describeCountry('Korea', 50, 'Seoul');
 const Japan = describeCountry('Japan', 120, 'Tokyo');
 const Australia = describeCountry('Australia', 20, 'Canberra');
@@ -184,3 +185,56 @@ console.log(Korea);
 console.log(Japan);
 console.log(Australia);
 
+/*
+LECTURE: Function Declarations vs. Expressions
+1. The world population is 7900 million people. Create a function declaration
+called 'percentageOfWorld1' which receives a 'population' value, and
+returns the percentage of the world population that the given population
+represents. For example, China has 1441 million people, so it's about 18.2% of
+the world population
+*/
+
+const Korea = 50000000;
+const Japan = 120000000;
+const Australia = 20000000;
+
+function percentageOfWorld1 (population){
+    return population / 7900000000 * 100;
+}
+
+console.log(percentageOfWorld1(Korea));
+console.log(percentageOfWorld1(Japan));
+console.log(percentageOfWorld1(Australia));
+
+/*
+2. To calculate the percentage, divide the given 'population' value by 7900
+and then multiply by 100
+*/
+
+
+
+/*
+3. Call 'percentageOfWorld1' for 3 populations of countries of your choice,
+store the results into variables, and log them to the console
+*/
+
+const popKorea = percentageOfWorld1(Korea);
+const popJapan = percentageOfWorld1(Japan);
+const popAustralia = percentageOfWorld1(Australia);
+
+console.log(popKorea);
+console.log(popJapan);
+console.log(popAustralia);
+/*
+4. Create a function expression which does the exact same thing, called
+'percentageOfWorld2', and also call it with 3 country populations (can be
+the same populations)
+*/
+
+const percentageOfWorld2 = function(population) {
+    return population / 7900000000 * 100;
+}
+
+console.log(percentageOfWorld2(Korea));
+console.log(percentageOfWorld2(Japan));
+console.log(percentageOfWorld2(Australia));
