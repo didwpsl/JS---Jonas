@@ -1,21 +1,26 @@
-//5 falsy values: 0, '', undefined, null, NaN // 
+const age = 18;
+if(age == 18)
+    console.log('You just became an adult');
 
-console.log(Boolean(0));
-console.log(Boolean(undefined));
-console.log(Boolean('Jonas'));
-console.log(Boolean({}));
-console.log(Boolean(' '));
+if(age === '18')
+        console.log('You just became an adult');
+    else {
+        console.log('Type is not the same');
+    }
 
-const money = 0;
-if(money) {
-    console.log("Don't spend it all");
-} else {
-    console.log('You should get a job')
-;}
+const favourite = Number(prompt("What is your favourite number?"));
 
-let height;
-if(height){
-    console.log('YAY! Height is defined');
-} else {
-    console.log('Height is UNDEFINED.');
-}
+
+
+if (favourite === 23){
+    console.log('Cool 23 is an amazing number');
+}else if (favourite === 7){
+    console.log('7 is also a cool number');
+} else console.log('Boooooooooooo!');
+
+const favnumber = Number(prompt('Guess what is the number that in my mind?'));
+if (Number === 8) {
+    console.log(favnumber)
+} else 
+console.log(prompt('Try Agian'));
+
