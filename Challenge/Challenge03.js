@@ -11,6 +11,10 @@ Your tasks:
 
 1. Calculate the average score for each team, using the test data below 
 */
+const avgDolphins = (96 + 108 + 89) / 3;
+const avgKoalas = (88 + 91 + 110) / 3;
+console.log("Dolphine's average score: " + avgDolphins);
+console.log("Koala's average score: " + avgKoalas);
 
 
 /*
@@ -18,7 +22,11 @@ Your tasks:
 and print it to the console. Don't forget that there can be a draw, so test for that
 as well (draw means they have the same average score)
 */
-
+if (avgDolphins > avgKoalas) {
+    console.log('Winner is Dolphins!')
+} else if (avgDolphins < avaKoalas) {
+    console.log('Winner is Koalas!')
+} else console.log('Draw!');
 
 
 /*
@@ -28,9 +36,32 @@ score of at least 100 points. Hint: Use a logical operator to test for minimum
 score, as well as multiple else-if blocks 
 */
 
+if (avgDolphins, avgKoalas >= 100){
+    if (avgDolphins > avgKoalas) {
+        console.log('Winner is Dolphins!')
+    } else if (avgDolphins < avgKoalas) {
+        console.log('Winner is Koalas!')
+    } else console.log('Draw!');
+} else console.log('There is no winner for this game');
+
+if (avgDolphins >= 100 && avgDolphins > avgKoalas ){
+    console.log('Dolphins is Winner!')
+} else if(avgKoalas >= 100 && avgDolphins < avgKoalas ){
+    console.log('Dolphins is Winner!')
+} else if(avgKoalas, avgDolphins >=100 && avgDolphins === avgKoalas){
+    console.log('Draw!')
+} else ('There is no winner for this game');
 
 /*
 4. Bonus 2: Minimum score also applies to a draw! So a draw only happens when
 both teams have the same score and both have a score greater or equal 100
 points. Otherwise, no team wins the trophy
 */
+
+if (avgDolphins, avgKoalas >= 100){
+    if (avgDolphins > avgKoalas) {
+        console.log('Winner is Dolphins!')
+    } else if (avgDolphins < avgKoalas) {
+        console.log('Winner is Koalas!')
+    } else console.log('Draw!');
+} else console.log('There is no winner for this game');

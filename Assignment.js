@@ -163,3 +163,4 @@ else console.log('Korea does not meet your criteria');
 change some variables in order to make the condition true (unless you live in
 Canada :D)
 */
+
