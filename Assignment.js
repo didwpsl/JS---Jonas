@@ -57,7 +57,7 @@ population = 50000000;
 
 /*
 2. Execute the operations to check if you were right
-*/
+*//*
 console.log('9' - '5');
 console.log('19' - '13' + '17');
 console.log('19' - '13' + 17);
@@ -266,7 +266,7 @@ which is about 18.2% of the world.'
 */
 
 
-
+/*
 function describePopulation (country, population){
     return (`${country} has ${population} people, which is about ${percentage} of the world`)
 }
@@ -275,7 +275,7 @@ function describePopulation (country, population){
 2. To calculate the percentage, 'describePopulation' call the
 'percentageOfWorld1' you created earlier
 */
-
+/*
 function percentageOfWorld1 (population){
     return population / 7900000000; 
 }
@@ -297,7 +297,7 @@ LECTURE: Introduction to Arrays
 1. Create an array containing 4 population values of 4 countries of your choice.
 You may use the values you have been using previously. Store this array into a
 variable called 'populations'
-*/
+*//*
 const popKorea = 50000000;
 const popJapan = 12000000000;
 const popAustralia = 20000000;
@@ -322,6 +322,47 @@ world population for these 4 population values. Use the function
 'percentageOfWorld1' that you created earlier to compute the 4
 percentage values
 */
-
+/*
 const percentages = [percentageOfWorld1(populations[0]), percentageOfWorld1(populations[1]), percentageOfWorld1(populations[2]), percentageOfWorld1(populations[3])];
 console.log(percentages);
+
+/*
+LECTURE: Basic Array Operations (Methods)
+1. Create an array containing all the neighbouring countries of a country of your
+choice. Choose a country which has at least 2 or 3 neighbours. Store the array
+into a variable called 'neighbours'
+*/
+const neighbours = ['Japan', 'China', 'Vietnam', 'Thailand']
+
+/*
+2. At some point, a new country called 'Utopia' is created in the neighbourhood of
+your selected country. So add it to the end of the 'neighbours' array
+*/
+neighbours.push('Utopia');
+console.log(neighbours);
+
+/*
+3. Unfortunately, after some time, the new country is dissolved. So remove it from
+the end of the array
+*/
+neighbours.pop();
+console.log(neighbours);
+
+/*
+4. If the 'neighbours' array does not include the country ‘Germany’, log to the
+console: 'Probably not a central European country :D'
+*/
+if (neighbours.includes('Germany')){
+    
+} else console.log('Probably not a central European country :D');
+
+/*
+5. Change the name of one of your neighbouring countries. To do that, find the
+index of the country in the 'neighbours' array, and then use that index to
+change the array at that index position. For example, you can search for
+'Sweden' in the array, and then replace it with 'Republic of Sweden'.
+*/
+
+console.log(neighbours.indexOf('China'));
+neighbours[1] = 'Republic of China';
+console.log(neighbours);

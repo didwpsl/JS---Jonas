@@ -1,42 +1,37 @@
-const friend1 = 'Michael';
-const friend2 = 'Steven';
-const friend3 = 'Peter'; 
+const friends = ['Micheal', 'Steven', 'Peter'];
+const newLength = friends.push('Jay');
+console.log(friends);
+console.log(newLength);
 
+const favNumber = [1, 2, 3, 4, 5];
+const examples = favNumber.push(6);
+console.log(favNumber);
+console.log(examples);
 
-//more usual 
-const friends = ['Michel', 'Steven', 'Peter'];
+friends.unshift('John', 'Amy');
 console.log(friends);
 
-/*
-const years = new Array(1991, 1984, 2008, 2020);
-console.log(years);
-*/
-console.log(friends[0]); //Arrays always start from 0
-console.log(friends[2]);
+friends.pop();
+friends.pop();
+const popped = friends.pop();
+console.log(popped);
+console.log(friends);
 
-console.log(friends.length);
-console.log(friends[friends.length - 1]);
+friends.shift();
+console.log(friends);
 
-friends[2] = 'Jay';
-console.log(friends[2]);
+const shiftted = friends.shift();
+console.log(shiftted);
 
-const firstName = 'Soyoung';
-const soyoung = [firstName, 'Yang', 2021-1993, 'teacher', friends];
-console.log(soyoung);
-console.log(soyoung.length);
+console.log(friends.indexOf('Jana'));
 
-const calcAge = function (birthYear){
-    return 2021 - birthYear;
+console.log(friends.includes('Amy'));
+console.log(friends.includes('Micheal'));
+
+friends.push(1);
+console.log(friends);
+console.log(friends.includes(1));
+
+if (friends.includes('Micheal')){
+    console.log('You have a friend called Peter')
 }
-const years = [1990, 1967, 2010, 2002, 2018];
-
-const age1 = calcAge(years[0]);
-const age2 = calcAge(years[1]);
-const age3 = calcAge(years[2]);
-const age4 = calcAge(years[3]);
-const age5 = calcAge(years[4]);
-
-console.log(age1, age2, age3, age4, age5);
-
-const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[2]), calcAge(years[years.length - 1])];
-console.log(ages);
