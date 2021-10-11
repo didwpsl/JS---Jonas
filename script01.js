@@ -1,14 +1,19 @@
-function cutFruitPieces(fruit){
-    return fruit *4 ; //Hoisting 
+const calAge = function (birthYear){
+    return 2021 - birthYear;
 }
 
-function fruitProcessor(apples, orange){
-    const applePieces = cutFruitPieces(apples); 
-    const orangePieces = cutFruitPieces(orange);
+const yearUntilRetirement = function (birthYear, firstName) {
+    const age = calAge(birthYear);
+    const retirement = 65 - age; 
 
-    const juice = `Juice with ${applePieces} apples 
-    and ${orangePieces} oranges`;
-    return juice;
+    if (retirement > 0) {
+        console.log(`${firstName} retires in ${retirement} years`);
+        return retirement;
+    } else {
+        console.log(`${firstName} has already retired`);
+        return -1; 
+    }
+
 }
 
-console.log(fruitProcessor(2, 3));
+console.log(yearUntilRetirement(1991, 'Jonas'));
