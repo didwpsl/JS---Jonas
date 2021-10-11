@@ -1,15 +1,14 @@
-'use strict'; 
-
-const calcAge3 = birthYear => 2021 - birthYear;
-console.log(calcAge3(1993));
-
-const yearsUntilRetirement = 
-    (birthYear, firstName) => {
-    const age = 2021 - birthYear;
-    const retirement = 65 - age;
-    return `${firstName} retires in ${retirement}`;
+function cutFruitPieces(fruit){
+    return fruit *4 ; //Hoisting 
 }
 
-console.log(yearsUntilRetirement(1993, 'SOYOUNG'));
-console.log(yearsUntilRetirement(1990, 'EZRA'));
+function fruitProcessor(apples, orange){
+    const applePieces = cutFruitPieces(apples); 
+    const orangePieces = cutFruitPieces(orange);
 
+    const juice = `Juice with ${applePieces} apples 
+    and ${orangePieces} oranges`;
+    return juice;
+}
+
+console.log(fruitProcessor(2, 3));
