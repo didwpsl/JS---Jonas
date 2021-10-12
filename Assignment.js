@@ -451,3 +451,42 @@ the console (for numbers 1 to 50): 'Voter number 1 is currently voting
 for (let voter = 0; voter <51; voter++ ){
     console.log(`Voter number ${voter} is currently voting`);
 }
+
+/*
+LECTURE: Looping Arrays, Breaking and Continuing
+1. Let's bring back the 'populations' array from a previous assignment
+*/
+const popKorea = 50000000;
+const popJapan = 12000000000;
+const popPhilippines = 100000000;
+const popAustralia = 20000000;
+
+const populations = [popKorea, popJapan, popPhilippines, popAustralia];
+
+/*
+2. Use a for loop to compute an array called 'percentages2' containing the
+percentages of the world population for the 4 population values. Use the
+function 'percentageOfWorld1' that you created earlier
+*/
+
+function percentageOfWorld1 (population) {
+    return population / 7000000000
+}
+
+const percentages = [percentageOfWorld1(populations[0]),percentageOfWorld1(populations[1]),percentageOfWorld1(populations[2]),percentageOfWorld1(populations[3] )];
+console.log(percentages);
+
+const percentages2 = []; 
+
+    for(let i = 0; i < populations.length; i++){
+    percentages2.push(percentageOfWorld1(populations[i]));
+}
+
+console.log(percentages2);
+
+/*
+3. Confirm that 'percentages2' contains exactly the same values as the
+'percentages' array that we created manually in the previous assignment,
+and reflect on how much better this solution is
+*/
+
