@@ -519,3 +519,26 @@ for(let i = 0; i < listOfNeighbours.length; i++ ){
 3. You will need a loop inside a loop for this. This is actually a bit tricky, so don't
 worry if it's too difficult for you! But you can still try to figure this out anyway �
 */
+
+/*
+LECTURE: The while Loop
+1. Recreate the challenge from the lecture 'Looping Arrays, Breaking and Continuing',
+but this time using a while loop (call the array 'percentages3')
+*/
+
+
+  
+const percentageOfWorld3 = [];
+
+let i = 0;
+while(i < populations.length){
+    percentageOfWorld3.push(percentageOfWorld1(populations[i]));
+    i++;
+}
+
+console.log(percentageOfWorld3);
+
+/*
+2. Reflect on what solution you like better for this task: the for loop or the while
+loop?
+*/
