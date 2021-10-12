@@ -167,7 +167,7 @@ LECTURE: Functions
 function returns a string with this format: 'Finland has 6 million people and its
 capital city is Helsinki'
 */
-
+/*
 function describeCountry (country, population, capitalCity){
     return (`${country} has ${population} million people and capital city is ${capitalCity}`)
 }
@@ -375,9 +375,30 @@ properties 'country', 'capital', 'language', 'population' and
 */ 
 
 const myCountry = {
-    country = 'Korea',
-    capital = 'Seoul',
-    language = 'Korean',
-    population = '50000000',
-    neighbours = ['Japan', 'China', 'Vietnam', 'Thailand']
+    country: 'Korea',
+    capital: 'Seoul',
+    language: 'Korean',
+    population: 50000000,
+    neighbours: ['Japan', 'China', 'Vietnam', 'Thailand']
 }
+console.log(myCountry)
+
+/*
+LECTURE: Dot vs. Bracket Notation
+1. Using the object from the previous assignment, log a string like this to the
+console: 'Finland has 6 million finnish-speaking people, 3 neighbouring countries
+and a capital called Helsinki.'
+*/
+console.log(`${myCountry.country} has ${myCountry.population} ${myCountry.language} 
+sppeaking people, ${myCountry.neighbours.length} neibouring countries and a capital called ${myCountry['capital']}`)
+
+/*
+2. Increase the country's population by two million using dot notation, and then
+decrease it by two million using brackets notation
+*/
+
+myCountry.population =myCountry.population + 2000000;
+console.log(myCountry.population);
+
+myCountry['population'] = myCountry['population'] - 2000000;
+console.log(myCountry['population']);

@@ -1,37 +1,45 @@
-const friends = ['Micheal', 'Steven', 'Peter'];
-const newLength = friends.push('Jay');
-console.log(friends);
-console.log(newLength);
+const jonasArray = [
+    'Jonas',
+    'Schmedtmann',
+    2021 - 1991,
+    'teacher'
+    ['Micheal', 'Peter', 'Steven']
+];
 
-const favNumber = [1, 2, 3, 4, 5];
-const examples = favNumber.push(6);
-console.log(favNumber);
-console.log(examples);
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtmann',
+    age: 2021 - 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven']
+};
 
-friends.unshift('John', 'Amy');
-console.log(friends);
+console.log(jonas);
+console.log(jonas.lastName);
+console.log(jonas['lastName']);
 
-friends.pop();
-friends.pop();
-const popped = friends.pop();
-console.log(popped);
-console.log(friends);
+const nameKey = 'Name';
+console.log(jonas['first' + nameKey]);
+console.log(jonas['last' + nameKey]);
 
-friends.shift();
-console.log(friends);
+const interestedIn = prompt('What do you want to know about Jonas? Choose betweeen firstName, lastName, age, job and friends');
+console.log(jonas[interestedIn]);
 
-const shiftted = friends.shift();
-console.log(shiftted);
 
-console.log(friends.indexOf('Jana'));
-
-console.log(friends.includes('Amy'));
-console.log(friends.includes('Micheal'));
-
-friends.push(1);
-console.log(friends);
-console.log(friends.includes(1));
-
-if (friends.includes('Micheal')){
-    console.log('You have a friend called Peter')
+if (jonas[interestedIn]){
+    console.log(jonas[interestedIn]);
+} else {
+    console.log('Wring request! Choose betweeen firstName, lastName, age, job and friends');
 }
+
+jonas.location = 'Portugal';
+jonas['twitter'] = '@jonasschmedtman';
+console.log(jonas);
+
+//Little Challenge 
+// Write the sentence of below in a dynamic way 
+// 'Jonas has 3 friends and his best friend is called Micheal'
+
+
+const sentence = `${jonas.firstName} has ${jonas.friends.length} friends and his best friend is ${jonas.friends[0]}`;
+console.log(sentence);
